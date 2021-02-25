@@ -1,0 +1,25 @@
+{
+  "name": "google-books-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awpdev/Google-Books-Search.git"
+  },
+  "author": "Andrew Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awpdev/Google-Books-Search/issues"
+  },
+  "homepage": "https://github.com/awpdev/Google-Books-Search#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18"
+  }
+}
