@@ -112,8 +112,8 @@ function Search() {
                                         <h2>Description</h2>
                                         <p>{description}</p>
                                         <img src={image}></img>
-                                        <button type="button" class="btn btn-primary" href={link}>View Book</button>
-                                        <button type="button" class="btn btn-primary" onClick={() => saveBook(id, title, authors, description, image, link)
+                                        <button type="button" className="btn btn-primary" href={link}>View Book</button>
+                                        <button type="button" className="btn btn-primary" onClick={() => saveBook(id, title, authors, description, image, link)
                                         }> Save Book </button>
                                     </ListItem>
                                 );
