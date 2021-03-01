@@ -46,9 +46,9 @@ function Save() {
                         {book.title} by {book.authors}
                       </strong>
                       <p>{book.description}</p>
-                      <img src={book.image}></img>
+                      <img src={book.image} alt="bookimg"></img>
                     <Button type="button" className="btn btn-primary" href={book.link} target="_blank">View Book</Button>
-                    <DeleteBtn onClick={() => deleteBook(book._id)}>Delete Book</DeleteBtn>
+                    <DeleteBtn onClick={() => deleteBook(book._id)}>Delete</DeleteBtn>
                   </ListItem> 
                 ))}
               </List>

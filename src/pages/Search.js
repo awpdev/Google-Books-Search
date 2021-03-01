@@ -107,7 +107,7 @@ return (
                             if (book.volumeInfo.previewLink) {
                                 link = book.volumeInfo.previewLink
                             } else {
-                                link = ""
+                                link = "";
                             }
                             return (
                                 <ListItem key={id}>
