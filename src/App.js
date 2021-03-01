@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
-import Search from "./pages/Search";
-import Save from "./pages/Save";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Search from './pages/Search';
+import Saved from './pages/Save';
+import NoMatch from './pages/NoMatch';
+import Nav from './components/Nav';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
             <Search />
           </Route>
           <Route exact path="/save">
-            <Save />
+            <Saved />
           </Route>
           <Route>
             <NoMatch />

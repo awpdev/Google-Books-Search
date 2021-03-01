@@ -1,27 +1,48 @@
 {
   "name": "google-books-search",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd client && npm start",
-    "heroku-postbuild": "cd client && npm install && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/awpdev/Google-Books-Search.git"
-  },
-  "author": "Andrew Park",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/awpdev/Google-Books-Search/issues"
-  },
-  "homepage": "https://github.com/awpdev/Google-Books-Search#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.0",
     "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.18"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.11.18",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.5.0",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
   }
 }

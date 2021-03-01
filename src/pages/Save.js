@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import Jumbotron from "../components/Jumbotron";
-import API from "../utils/API";
+import React, { useState, useEffect } from 'react';
+import Jumbotron from '../components/Jumbotron';
+import API from '../utils/API';
 
-import { Col, Row, Container } from "../components/Grid";
-import { List, ListItem } from "../components/List";
-import DeleteBtn from "../components/DeleteBtn";
+import { Col, Row, Container, Button } from 'react-bootstrap';
+import { List, ListItem } from '../components/List';
+import DeleteBtn from '../components/DeleteBtn';
 
 function Save() {
   // Setting our component's initial state
@@ -34,7 +34,7 @@ function Save() {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-6 sm-12">
             <Jumbotron>
               <h1>Books On My List</h1>
             </Jumbotron>
@@ -47,8 +47,8 @@ function Save() {
                       </strong>
                       <p>{book.description}</p>
                       <img src={book.image}></img>
-                    <DeleteBtn onClick={() => deleteBook(book._id)} />
-                    <button type="button" className="btn btn-primary" href={book.link}>View Book</button>
+                    <Button type="button" className="btn btn-primary" href={book.link} target="_blank">View Book</Button>
+                    <DeleteBtn onClick={() => deleteBook(book._id)}>Delete Book</DeleteBtn>
                   </ListItem> 
                 ))}
               </List>
